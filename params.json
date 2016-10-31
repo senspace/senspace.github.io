@@ -1,6 +1,6 @@
 {
   "name": "Senspace",
   "tagline": "senspace's personal blog",
-  "body": "# senspace.github.io\r\nsenspace's personal blog\r\n\r\n#include <iostream>\r\n#include <vector>\r\n\r\nusing namespace std;\r\n\r\nint main() {\r\n\r\n    return 0;\r\n}",
+  "body": "# senspace.github.io\r\nsenspace's personal blog\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
