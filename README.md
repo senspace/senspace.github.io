@@ -1,55 +1,60 @@
-# jekyll-theme-EasyBook
+# stepbystep  
+A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
-Another Jekyll Blog Theme "EasyBook"
+## Preview
+#### PC or Pad
+<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
+#### Mobile
+<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
+</div>
 
-Start blogging with a simple but powerful theme.
+## Feature  
 
-## Features
-
-- Everything Basic Jekyll has.
-- **Pagination** is enabled.
-- **Comments** using Disqus or 多说.
-- **TOC** makes reading easier.
-- **Profile** including your links and avatar on the sidebar.
-- *And more...*
+1. Compatible with PC iPad and Phone (RWD)
+2. Support blogger mood-talk(说说)
+3. Support post subdirs as post categories  
+  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
 
 ## Install
+assume the github username is "hello" then:  
 
-Read [Quick Guide] to learn how to install and publish.
+1. create a repository named "hello.github.io"  
+2. clone this repository  
+  `git clone https://github.com/jokinkuang/stepbystep.git`  
+3. push the whole thing to your repo "hello.github.io"  
+  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
+  `git push origin master`  
+4. browse "hello.github.io"  
 
-Read [Welcome to Jekyll and EasyBook][helloPost] and [Jekyll][jekyll] for further information.
+> if your github username is "world" then replace upper "hello" all to "world"  
 
-**If need help, please:**
+## Custom Domain  
+if you want to visit "www.hello.com" instead of "hello.github.io" then:  
 
- - [**Read Wiki pages**](https://github.com/laobubu/jekyll-theme-EasyBook/wiki)
- - **Google it**
- - [**Submit an issue**](https://github.com/laobubu/jekyll-theme-EasyBook/issues/new)
+1. create a file named "CNAME" (the file is already exist)  
+2. buy the "www.hello.com" domain  
+3. add following to the "CNAME"  
+  `www.hello.com`  
+4. go to the Shop where your domain bought and set the Domain DNS to:  
+  | prefix | record-type |      host       |  
+  |   www  |   CNAME     | hello.github.io |  
+5. wait a long long time  
+6. browse "www.hello.com"
 
-## Donate
+## Custom Your Site  
+1. you need a [duoshuo](http://www.duoshuo.com) account  
+2. you need a [google-analytics](https://www.google.com/analytics/) account  
+3. all settings are in `_config.yml` 
 
-Buy me a coffee if you find EasyBook useful for you :smiley:
+## Other  
+whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
 
-Visit <http://laobubu.net/donate.html>
+## How It works  
+[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
+[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
 
-## Demo
+## License  
+Under The [MIT](https://tldrlegal.com/license/mit-license) License
 
-[laobubu's blog](http://blog.laobubu.net) | [empty site](http://laobubu.github.io/jekyll-theme-EasyBook)
-
-![Homepage](https://ooo.0o0.ooo/2016/02/11/56bc997c65daf.png)
-
-## License
-
-```
-The MIT License (MIT)
-Copyright (c) 2016 laobubu
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
-[Quick Guide]: https://github.com/laobubu/jekyll-theme-EasyBook/wiki/Quick-Guide
-[helloPost]: http://laobubu.github.io/jekyll-theme-EasyBook/archivers/hello
-[jekyll]: http://jekyllrb.com/
