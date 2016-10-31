@@ -1,61 +1,113 @@
-# Site settings
-title: Your Title
-author: author
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://senspace.github.io/
+date_format: "ordinal"
+title: Senspace
+subtitle: "早起的小蛤蟆会下蛋"
+description: "Senspace's personal blog"
+keywords: senspace, Fan
+favicon: /favicon.ico
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
 
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Senspace
+organization: Peking University, Inc.
+organization_url: http://www.pku.edu.cn/
+location: Beijing, China
+email: notefan.j@gmail.com
 
-# Site URL NOTE: if your site is base on subdir /blog you should change base to "/blog"
-domain: "http://yourdomain.github.io" # the domain URL for your site
-base: ""  # the relative path that different with domain so you can test locally
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
 
-# Source URL NOTE: end with / cause it's [URL + FILE]
-w3c_url: "/w3c/"  # the base url of css js and images
-images_url: "/w3c/images/" # the base url of post images
-postfile: "/db/Postfile" # the Database
-sitefile: "/db/Sitefile" # the Database
+  -
+    href: /categories/
+    label: 分类
 
-# 3rd URL
-duoshuo_short_name: "sbys" # the user of user.domain.com
-duoshuo_user_uid: "6324572809590735618" # the admin user uid
-duoshuo_user_name: "xk" # the admin user name
-duoshuo_max_depth: "2"  # the max_depth setting in duoshuo comments
-duoshuo_url: "/w3c/duoshuo/embed.min.js" # the local duoshuo comment plugin, you can change it to remote "http://static.duoshuo.com/"
-jquery_url: "http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js" # use cdn
-baiduTemplate_url: "/w3c/js/baiduTemplate.js" #use local
-google_analytics_id: "UA-83197743-1"
+  -
+    href: /wiki/
+    label: 维基
 
-# Build Settings
-excerpt_separator: "\n\n" # you can specify your own separator here, default is "\n\n" String
-permalink: /:year/:month/:day/:title.html
-highlighter: rouge
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
 markdown: kramdown
 kramdown:
-  input: GFM
-  hard_wrap: true # a newline in markdown text would be changed to <br>
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
 gems:
-  - jemoji
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-# Following is got in Github Help With Configuring Jekyll
+# ---------------- #
+#      Socials     #
+# ---------------- #
+github_username: mzlogin
+douban_username: freedim
+facebook_username: mzlogin
+weibo_username: mzlogin
+zhihu_username: mzlogin
+twitter_username: mzlogin
 
-# Github Page Default Settings which you can override:
-# kramdown:
-#   input: GFM
-#   hard_wrap: false
-# gems:
-#   - jekyll-coffeescript
-#   - jekyll-paginate
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, duoshuo
+comments_provider: disqus
+# !!!重要!!! 请修改下面两个用户名为你自己申请的
+# !!!Important!!! Please modify usernames below to yours
+duoshuo_username: senspace
+disqus_username: senspace
+# 在使用 disqus 的时候可点击显示多说评论框
+lazy_load_duoshuo: true
 
-# Github Page override the following settings which you cannot change:
-# lsi: false
-# safe: true
-# source: [your repo's top level directory]
-# incremental: false
-# highlighter: rouge
-# gist:
-#  noscript: false
-# kramdown:
-#  math_engine: mathjax
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1
+
+# ---------------- #
+#      Datas       #
+# ---------------- #
+skill_software_keywords: [C++, Python, Embedded System, Data Structure]
+skill_mobile_app_keywords: [Android, Reverse Engineering]
+skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
