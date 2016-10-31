@@ -40,6 +40,6 @@ noita:
         url: /guide/
       - name: Blog
         url: /blog/
-      - name: Repository
+      - name: Github
         url: https://github.com/senspace
         class: small button
