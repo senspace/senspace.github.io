@@ -1,195 +1,139 @@
-Jekyll Clean
-============
+# Yummy Jekyll Theme
 
-* Get it from [github](https://github.com/scotte/jekyll-clean).
-* See the [live demo](https://scotte.github.io/jekyll-clean).
-* See it [in action on my own blog](https://scotte.org).
+A Simple, Bootstrap Based Theme. Especially for developers who like to show their projects on website and like to take notes. There are also some magical features to discover. 
 
-A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
-(not to be confused with jekyll-bootstrap) that's easy to modify and very
-modular in component and element reuse.
+## [Live Demo](http://dongchuan.github.io/)
 
-It uses Disqus for comments and includes Google Analytics support. Both of
-these features are disabled by default and can be enabled via \_config.yml. You
-can also rip this code out of the templates if you like (footer.html and post.html).
-The beauty of Jekyll - keep things clean... Jekyll Clean!
+Open issues if you find bugs or even have trouble installing jekyll or dependencies. :D
 
-The theme works well on mobile phones, using a collapsable nav bar and hiding the
-sidebar. The links pane in the sidebar is available on mobile through the nav menu,
-and you can do the same thing for any other sections added to the sidebar.
+Or contact: dongchuan55@gmail.com
 
-Don't forget to occassionally merge against my upstream repository so you can get
-the latest changes. Pull requests are encouraged and accepted!
+> Strongly suggest to fork and change project name to create your GitHub Pages instead of downloading it directly. Because in the future, I will develop many funny modules like 'footprint' to show your world wide trip. Could be easier to merge new features in the future.
 
-Installation
-============
+## Notable Features
 
-If you don't have a blog already on github, start by cloning this repository.
-Best to do that directly on github and then clone that down to your computer.
+* Compatible with Jekyll 3.x and GitHub Pages
+* Based on Bootstrap
+* [Github Module](http://dongchuan.github.io/open-source) to show your popular projects in a single page and on sidebar automatically. (Datas are retreived by github metadata instead of by api calls, so no delay) 
+* [Post Module](http://dongchuan.github.io/blog) to show all your posts with timeline
+* [Bookmark Module](http://dongchuan.github.io/bookmark) to establish a quick mark about all libs/tools/books you like to use.
+* [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html) to generat a quick directory of your post by titles/subtitles automatically.
+* Support [Disqus Comment](https://disqus.com/home/explore/)
+* Support [Google Analytics](https://analytics.google.com/analytics/web/)
 
-If you already do have a blog, You can certainly apply this theme to your existing
-blog in place, but then you won't be able to merge as the theme changes. If you
-re-apply your blog history on top of this theme's **gh-pages** branch, it's then
-easy to update to the latest version of the theme. You also don't want to have to
-deal with resolving old conflicts from your existing history, so you may wish to to
-push your existing master off to a new branch so you have the old history and start
-a new branch with this as the start, merging in your \_posts and other assets (after
-git rm'ing the current \_posts.
+Features in future:
+* A Footprint module to show all your travel around the world
+* Feature to share. (Facebook, twitter, evernote and so on)
+* (Not sure) A embeded todo list. (Not sure) to travel, to complete, to do for your parents, etc. To do in life!
+* Creative ideas to discuss with you :P
 
-Not ideal, but you have to make a choice - either apply it manually or base your
-blog off this theme's branch. Either way it will work, and both have their own
-pros and cons.
+## Install and setup
 
-You can setup an upstream tracking repository like so:
+Before using it, you may need [Bower](http://bower.io/) and [Bundler](http://bundler.io/) on your local to install dependencies.
 
-```
-$ git remote add upstream git@github.com:scotte/jekyll-clean.git
-```
+1. Fork code and clone
+2. Run `bower install` to install all dependencies in [bower.json](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/bower.json)
+3. Run `bundle install` to install all dependencies in [Gemfile](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/Gemfile)
+4. Update `_config.yml` with your own settings.
+5. Add posts in `/_posts`
+6. Commit to your own Username.github.io repository.
+7. Then come back to star this theme!
 
-And now when you wish to merge your own branch onto the latest version of the
-theme, simply do:
+> When install dependencies by bundler or gem, you may have some errors depending on your environment.
 
-```
-$ git fetch upstream
-$ git merge upstream/gh-pages
-```
+> Error about `json`. Check response of [Massimo Fazzolari on Stackoverflow](http://stackoverflow.com/questions/8100891/the-json-native-gem-requires-installed-build-tools) to quick fix your problem. (Please also use latest version instead of 1.9.3 mentioned in the response)
+  
+> Error about `jekyll-paginate`. Please check [here](http://stackoverflow.com/questions/35401566/dont-have-jekyll-paginate-or-one-of-its-dependencies-installed)
 
-Of course you will have to resolve conflicts for \_config.yml, \_includes/links-list.html,
-and \_posts, and so on, but in practice this is pretty simple.
+> Error about `SSL_connect`. Please check [here](http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure) and [here](http://railsapps.github.io/openssl-certificate-verify-failed.html)
 
-This is how I maintain my own blog which is based on this theme. The old history is
-sitting in an **old-master** branch that I can refer to when I need to.
+> For the moment, when you test on your local, you need to keep internet connection. Bug will be fixed soon.
 
-Running Locally
-===============
+## How to use
 
-Here's the exact set of packages I need to install on Debian to run jekyll
-locally with this theme for testing.
+#### Create a new post
+
+Create a `.md` file inside `_posts` folder.
+
+Name the file according to the standard jekyll format.
 
 ```
-$ sudo aptitude install ruby ruby-dev rubygems nodejs
-$ sudo gem install jekyll jekyll-paginate
+2016-01-19-i-love-yummy.md
 ```
 
-And then it's just a simple matter of running jekyll locally:
+Write the Front Matter and content in the file.
 
 ```
-$ jekyll serve --baseurl=''
+---
+layout: post
+title: Post title
+category: Category
+tags: [tag1, tag2]
+---
 ```
 
-Now browse to http://127.0.0.1:4000
+Please find examples [here](https://github.com/DONGChuan/DONGChuan.github.io/tree/master/_posts)
 
-Using gh-pages
-==============
+> Jekyll supports different structure of repository. You could just create as many folders as you want under _posts. Then jekyll will look through all folders/subfolders to find your posts. So cool, right? :D
 
-Running a jekyll site is a bit outside the scope of this doc, but
-sometimes it can be a bit confusing how to configure jekyll for
-project pages versus user pages, for example.
+#### [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html)
 
-To start with, read through
-[the documentation here](https://help.github.com/articles/user-organization-and-project-pages/).
-This will provide a good overview on how it all works. The git branch and
-baseurl (in _config.yml) will change depending on the sort of site deployed.
-
-When you clone this repository, it's set up for project pages, so the
-deployed branch is "gh-pages" and baseurl is configured to 'jekyll-clean',
-because that's the name of this project.
-
-If you plan to deploy this as user pages, the deployed branch is "master"
-and baseurl is configured to '' (i.e. empty).
-
-Comment Systems
-===============
-
-Jekyll clean supports both [isso](https://posativ.org/isso) and
-[disqus](https://disqus.com) comment systems.
-
-After enabling **comments**, either **isso** or **disquss** must
-be configured. Don't try configuring both!
-
-Isso Comments
-=============
-
-Isso requires running a local server, so is not suitable for hosting
-in github pages, for example. Isso is open source and keeps all your
-data local, unlike Disqus (who knows exactly what they are doing with
-your data).
-
-In _config.yml you'll need to set **isso** to the fully-qualified URL
-if your isso server (this is the value for **data-isso** passed to the
-isso JS). Make sure **comments** is true.
-
-Disqus Comments
-===============
-
-Getting Disqus to work can be a bit more work than it seems like it should be.
-Make sure your Disqus account is correctly configured with the right domain
-of your blog and you know your Disqus shortname.
-
-In _config.yml you'll need to set **disqus** to your Disqus shortname and
-make sure **comments** is true.
-
-Finally, in posts, make sure you have **comments: true** in the YAML front
-matter.
-
-More information on using Disqus with Jekyll is
-[documented here](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions).
-
-Code Syntax Highlighting
-========================
-
-To use code syntax highlighting, use the following syntax:
+When writing post, please always follow this format:
 
 ```
-```python
-import random
+Description about this post, blablabla
 
-# Roll the die
-roll = random.randint(1, 20)
-print('You rolled a %d.' % roll)
-``` #REMOVE
+## Title A
+
+### Title A-1
+
+### Title A-2
+
+## Title B
+
+### Title B-1
+
 ```
 
-(Remove #REMOVE from the end of the last line). Which will look like this in
-the rendered jekyll output using the default css/syntax.css provided with this
-theme (which is the **colorful** theme from [https://github.com/iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)):
+So, Title A, A-1, A-2, Title B, B-1 will be detected and created as a directory
 
-```python
-import random
+For example, [a demo post](https://github.com/DONGChuan/DONGChuan.github.io/edit/master/_posts/2016-04-22-CSS-Animation.md)
 
-# Roll the die
-roll = random.randint(1, 20)
-print('You rolled a %d.' % roll)
-```
+But if you do not like it or your post is quite short. You want to hide this navigation to make your post occupy your full screen. You just need to set **no-post-nav:true** in the Front Matter of the post where you want to hide this feature :D
 
-NOTE: The example in this README.md will render differently than in the
-final jekyll output. See the [live demo](https://scotte.github.io/jekyll-clean)
-to see how it really looks.
+#### [Github Module](http://dongchuan.github.io/open-source)
 
-You can, of course, use any theme you wish, see the jekyll and pygments
-documentation for more details.
+This module will get automatically all your repository information from github. But to test on your local, you must keep internet connection. 
+In the future, it will also show the repositories you contributed a lot and the ones of your organization.
 
-License
-=======
+#### [Bookmark Module](http://dongchuan.github.io/bookmark)
 
-The content of this theme is distributed and licensed under a
-![License Badge](/images/cc_by_88x31.png)
-[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+To add new marks, you only need to edit [bookmark.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/bookmark.md).
 
-    This license lets others distribute, remix, tweak, and build upon your work,
-    even commercially, as long as they credit you for the original creation. This
-    is the most accommodating of licenses offered. Recommended for maximum
-    dissemination and use of licensed materials.
+#### [Customize About Page](http://dongchuan.github.io/about)
 
-In other words: you can do anything you want with this theme on any site, just please
-provide a link to [the original theme on github](https://github.com/scotte/jekyll-clean)
-so I get credit for the original design. Beyond that, have at it!
+Feel free to customize about.me page to show yourself. You only need to modify [about.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/about.md) and [about.html](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/_includes/about.html)
 
-This theme includes the following files which are the properties of their
-respective owners:
+## ToDo
 
-* js/bootstrap.min.js - [bootstrap](http://getbootstrap.com)
-* css/bootstrap.min.css - [bootstrap](http://getbootstrap.com)
-* js/jquery.min.js - [jquery](https://jquery.com)
-* images/cc_by_88x31.png - [creative commons](https://creativecommons.org)
-* css/colorful.css - [iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)
+- [ ] List posts by a specified tag
+- [ ] New module FootPrint to show your world around trips
+- [ ] Show projects from your orgnization on github. (Siderbar, in open-source page)
+- [ ] To fix bug - could only test on local with internet connected.
+
+## Contributor
+
+* [DONGChuan](https://github.com/DONGChuan)
+* [Mojtaba Koosej](https://github.com/mkoosej)
+* [shahsaurabh0605](https://github.com/shahsaurabh0605)
+* [Z-Beatles](http://www.waynechu.cn/)
+* [LM450N](https://github.com/LM450N)
+* [XhmikosR](https://github.com/XhmikosR)
+
+## License
+
+The Apache License 2.0
+
+Copyright (c) 2016 DONG Chuan
+
+Check [LICENSE](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/LICENSE) file and [official website](http://www.apache.org/licenses/LICENSE-2.0) for details
