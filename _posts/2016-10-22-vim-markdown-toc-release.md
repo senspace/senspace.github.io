@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vim-markdown-toc 发布 v1.0 版
+title: 卷积神经网络(CNN)各层介绍
 categories: Vim
 description: 我写的第一款 Vim 插件的 Release 版本。
 keywords: Vim, Markdown, Table of Contents
