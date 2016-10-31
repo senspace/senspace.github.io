@@ -1,7 +1,7 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rough'
-gem 'jekyll-paginate'
-gem 'jekyll-geo-pattern'
-gem 'kramdown'
-gem 'jekyll-github-metadata'
+group :test do
+  gem "jekyll"
+  gem "html-proofer"
+  gem "rake"
+end
