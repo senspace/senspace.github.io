@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CNN各层介绍
-categories: 
+categories: CNN
 description: 简要介绍卷积神经网络中卷积层、池化层、归一化层、全连接层
 及GEMM等等。
 keywords: CNN
