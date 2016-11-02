@@ -342,19 +342,19 @@ This is [an example] [1] reference-style link.
 
 <font color="red">接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</font>
 
-[1]: http://example.com/  "Optional Title Here"
+   [1]: http://example.com/  "Optional Title Here"
 
-<font color="red">链接内容定义的形式为：
+<font color="red">链接内容定义的形式为：</font>
 
-1.  方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+<font color="red">1.  方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</font>
 
-2.  接着一个冒号
+<font color="red">2.  接着一个冒号</font>
 
-3.  接着一个以上的空格或制表符
+<font color="red">3.  接着一个以上的空格或制表符</font>
 
-4.  接着链接的网址
+<font color="red">4.  接着链接的网址</font>
 
-5.  选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
+<font color="red">5.  选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
 
 
 下面这三种链接的定义都是相同：
