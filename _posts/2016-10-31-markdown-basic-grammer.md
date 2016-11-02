@@ -42,7 +42,7 @@ Markdown 将会把它转换为：4 &lt; 5
 
 ### 标题
 
-Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。(本人一般采用第二种)
+Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。<font color=red>(本人一般采用第二种)</font>
 
 1.  类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：
 
@@ -155,81 +155,91 @@ Markdown 支持有序列表和无序列表。(列表后接table制表符)
 
 如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。
 
-列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。(重要)
+<font color=red>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</font> 
 
 要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
+        *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+            viverra nec, fringilla in, laoreet vitae, risus.
+        *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+            Suspendisse id sem consectetuer libero luctus adipiscing.
+
 但是如果你懒，那也行：
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+        *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+        viverra nec, fringilla in, laoreet vitae, risus.
+        *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+        Suspendisse id sem consectetuer libero luctus adipiscing.
+
 如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 <p> 标签包起来，举例来说：
 
-*   Bird
-*   Magic
+        *   Bird
+        *   Magic
+
 会被转换为：
 
-<ul>
-<li>Bird</li>
-<li>Magic</li>
-</ul>
+        <ul>
+        <li>Bird</li>
+        <li>Magic</li>
+        </ul>
+
 但是这个：
 
-*   Bird
+        *   Bird
 
-*   Magic
+        *   Magic
+
 会被转换为：
 
-<ul>
-<li><p>Bird</p></li>
-<li><p>Magic</p></li>
-</ul>
-列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：
+        <ul>
+        <li><p>Bird</p></li>
+        <li><p>Magic</p></li>
+        </ul>
 
-1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
+<font color=red>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</font>
 
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
+        1.  This is a list item with two paragraphs. Lorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+            mi posuere lectus.
 
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+            Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+            vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+            sit amet velit.
+
+        2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+
 如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown 也允许：
 
-*   This is a list item with two paragraphs.
+        *   This is a list item with two paragraphs.
 
-    This is the second paragraph in the list item. You're
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
+            This is the second paragraph in the list item. You're
+        only required to indent the first line. Lorem ipsum dolor
+        sit amet, consectetuer adipiscing elit.
 
-*   Another item in the same list.
-如果要在列表项目内放进引用，那 > 就需要缩进：
+        *   Another item in the same list.
 
-*   A list item with a blockquote:
+<font color=red>如果要在列表项目内放进引用，那 > 就需要缩进：</font>
 
-    > This is a blockquote
-    > inside a list item.
-如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：
+        *   A list item with a blockquote:
 
-*   一列表项包含一个列表区块：
+            > This is a blockquote
+            > inside a list item.
 
-        <代码写在这>
-当然，项目列表很可能会不小心产生，像是下面这样的写法：
+<font color=red>如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：</font>
 
-1986. What a great season.
-换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。
+        *   一列表项包含一个列表区块：
 
-1986\. What a great season.
+                <代码写在这>
 
+<font color=red>当然，项目列表很可能会不小心产生，像是下面这样的写法：</font>
+
+        1986. What a great season.
+
+<font color=red>换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。</font>
+
+        1986\. What a great season.
 
 ### 代码区块
 
