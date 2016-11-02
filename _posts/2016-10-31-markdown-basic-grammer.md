@@ -2,7 +2,7 @@
 layout: post
 title: MarkDown语法说明
 categories: MarkDown
-description: 简要介绍基础语法等等。
+description: 简要介绍MarkDown基础语法。
 keywords: MarkDown
 ---
 
@@ -294,7 +294,7 @@ Markdown 会转换成：
 
 ### 分隔线
 
-你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
+<font color="red">你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</font>下面每种写法都可以建立分隔线：
 
     * * *
 
