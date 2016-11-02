@@ -278,6 +278,21 @@ Markdown 会转换成：
 <font color="red">一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</font>
 
 
+在代码区块里面， & 、 < 和 > 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，再加上缩进就可以了，剩下的 Markdown 都会帮你处理，例如：
+
+    <div class="footer">
+        &copy; 2004 Foo Corporation
+    </div>
+
+会被转换为：
+
+    <pre><code>&lt;div class="footer"&gt;
+        &amp;copy; 2004 Foo Corporation
+    &lt;/div&gt;
+    </code></pre>
+
+<font color="red">代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</font>
+
 ### 分隔线
 
 ## 区段元素
