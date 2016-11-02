@@ -334,23 +334,23 @@ Markdown 会转换成：
 
 <font color="red">参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</font>
 
-This is [an example][1] reference-style link.
+    This is [an example][id] reference-style link.
 
 你也可以选择性地在两个方括号中间加上一个空格：
 
-This is [an example] [1] reference-style link.
+    This is [an example] [id] reference-style link.
 
 <font color="red">接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</font>
 
-[1]: http://example.com/  "Optional Title Here"
+    [id]: http://example.com/  "Optional Title Here"
 
 <font color="red">链接内容定义的形式为：</font>
 
-<font color="red">1.  方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</font>
-<font color="red">2.  接着一个冒号</font>
-<font color="red">3.  接着一个以上的空格或制表符</font>
-<font color="red">4.  接着链接的网址</font>
-<font color="red">5.  选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
+<font color="red">方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</font>
+<font color="red">接着一个冒号</font>
+<font color="red">接着一个以上的空格或制表符</font>
+<font color="red">接着链接的网址</font>
+<font color="red">选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
 
 下面这三种链接的定义都是相同：
 
