@@ -587,9 +587,28 @@ Markdown 会转成：
 
 ## Markdown 免费编辑器
 
+Linux 平台
+
+*   [ReText](https://github.com/retext-project/retext)
+
+Mac 平台
+
+*   [Mou](http://25.io/mou/)
+
+在线编辑器
+
+*   [Dillinger.io](http://dillinger.io/)
+
+浏览器插件
+
+*   [MaDe (Chrome)](https://chrome.google.com/webstore/detail/made/oknndfeeopgpibecfjljjfanledpbkog)
+
+高级应用
+
+*   [Sublime Text 2](http://www.sublimetext.com/2) + [MarkdownEditing / 教程](http://ttscoff.github.io/MarkdownEditing/)
 
 ## 参考
 
-*   [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/#list)
-*   [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)
+1.  [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/#list)
+2.  [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)
 
