@@ -376,6 +376,58 @@ Markdown 会转换成：
     [link text][a]
     [link text][A]
 
+隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 "Google" 链接到 google.com，你可以简化成：
+
+    [Google][]
+
+然后定义链接内容：
+
+    [Google]: http://google.com/
+
+由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：
+
+    Visit [Daring Fireball][] for more information.
+
+然后接着定义链接：
+
+    [Daring Fireball]: http://daringfireball.net/
+
+链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。
+
+下面是一个参考式链接的范例：
+
+    I get 10 times more traffic from [Google] [1] than from
+    [Yahoo] [2] or [MSN] [3].
+
+      [1]: http://google.com/        "Google"
+      [2]: http://search.yahoo.com/  "Yahoo Search"
+      [3]: http://search.msn.com/    "MSN Search"
+
+如果改成用链接名称的方式写：
+
+    I get 10 times more traffic from [Google][] than from
+    [Yahoo][] or [MSN][].
+
+      [google]: http://google.com/        "Google"
+      [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+      [msn]:    http://search.msn.com/    "MSN Search"
+
+上面两种写法都会产生下面的 HTML。
+
+    <p>I get 10 times more traffic from <a href="http://google.com/"
+    title="Google">Google</a> than from
+    <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
+    or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+
+下面是用行内式写的同样一段内容的 Markdown 文件，提供作为比较之用：
+
+    I get 10 times more traffic from [Google](http://google.com/ "Google")
+    than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
+    [MSN](http://search.msn.com/ "MSN Search").
+
+参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的却会增加到 176 个字元，如果是用纯 HTML 格式来写，会有 234 个字元，在 HTML 格式中，标签比文本还要多。
+
+使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。
 
 ### 强调
 
