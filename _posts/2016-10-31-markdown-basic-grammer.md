@@ -344,13 +344,13 @@ Markdown 会转换成：
 
     [id]: http://example.com/  "Optional Title Here"
 
-<font color="red">链接内容定义的形式为：</font>
+链接内容定义的形式为：
 
-<font color="red">方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</font>
-<font color="red">接着一个冒号</font>
-<font color="red">接着一个以上的空格或制表符</font>
-<font color="red">接着链接的网址</font>
-<font color="red">选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
+*   方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+*   接着一个冒号
+*   接着一个以上的空格或制表符
+*   接着链接的网址
+*   选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
 
 下面这三种链接的定义都是相同：
 
