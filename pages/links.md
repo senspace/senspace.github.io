@@ -12,5 +12,3 @@ permalink: /links/
 
 * [Github](https://github.com/senspace)
 * [Blog](http://senspace.github.io)
-
-
