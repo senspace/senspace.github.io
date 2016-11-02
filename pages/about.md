@@ -8,6 +8,8 @@ menu: 关于
 permalink: /about/
 ---
 
+### If you only do what you can do, you will never be more than you are now.
+
 ### Contact
 You can email me at notefan.j@gmail.com
 
@@ -18,6 +20,3 @@ You can email me at notefan.j@gmail.com
     {% endfor %}
 </div>
 
-### Story
-
-If you only do what you can do, you will never be more than you are now.
