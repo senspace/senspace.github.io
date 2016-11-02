@@ -10,7 +10,7 @@ permalink: /links/
 
 > If you only do what you can do, you will never be more than you are now.
 
-* Github:[https://github.com/senspace]
-* Blog:[http://senspace.github.io]
+* [Github](https://github.com/senspace)
+* [Blog](http://senspace.github.io)
 
 

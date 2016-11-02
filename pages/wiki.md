@@ -8,7 +8,7 @@ menu: 维基
 permalink: /wiki/
 ---
 
-> 记多少命令和快捷键会让脑袋爆炸呢？
+> If you only do what you can do, you will never be more than you are now.
 
 <ul class="listing">
 {% for wiki in site.wiki %}
