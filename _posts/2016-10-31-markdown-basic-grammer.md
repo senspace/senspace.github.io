@@ -342,20 +342,15 @@ This is [an example] [1] reference-style link.
 
 <font color="red">接着，在文件的任意处，你可以把这个标记的链接内容定义出来：</font>
 
-   [1]: http://example.com/  "Optional Title Here"
+[1]: http://example.com/  "Optional Title Here"
 
 <font color="red">链接内容定义的形式为：</font>
 
 <font color="red">1.  方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</font>
-
 <font color="red">2.  接着一个冒号</font>
-
 <font color="red">3.  接着一个以上的空格或制表符</font>
-
 <font color="red">4.  接着链接的网址</font>
-
 <font color="red">5.  选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</font>
-
 
 下面这三种链接的定义都是相同：
 
@@ -364,6 +359,23 @@ This is [an example] [1] reference-style link.
     [foo]: http://example.com/  (Optional Title Here)
 
 请注意：有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。
+
+链接网址也可以用尖括号包起来：
+
+    [id]: <http://example.com/>  "Optional Title Here"
+
+你也可以把 title 属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：
+
+    [id]: http://example.com/longish/path/to/resource/here
+        "Optional Title Here"
+
+网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。
+
+链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：
+
+    [link text][a]
+    [link text][A]
+
 
 ### 强调
 
