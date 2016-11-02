@@ -233,9 +233,7 @@ Markdown 支持有序列表和无序列表。(列表后接table制表符)
 
                 <代码写在这>
 
-<font color=red>当然，项目列表很可能会不小心产生，像是下面这样的写法：</font>
-
-<font color=red> jiangfan </font>>
+        <font color=red>当然，项目列表很可能会不小心产生，像是下面这样的写法：</font>
 
         1986. What a great season.
 
