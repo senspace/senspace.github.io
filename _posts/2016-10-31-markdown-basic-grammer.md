@@ -105,45 +105,52 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
 
 ### 列表
 
-Markdown 支持有序列表和无序列表。
+Markdown 支持有序列表和无序列表。(列表后接table制表符)
 
 无序列表使用星号、加号或是减号作为列表标记：
 
-*   Red
-*   Green
-*   Blue
+        *   Red
+        *   Green
+        *   Blue
+
 等同于：
 
-+   Red
-+   Green
-+   Blue
+        +   Red
+        +   Green
+        +   Blue
+
 也等同于：
 
--   Red
--   Green
--   Blue
+        -   Red
+        -   Green
+        -   Blue
+
 有序列表则使用数字接着一个英文句点：
 
-1.  Bird
-2.  McHale
-3.  Parish
+        1.  Bird
+        2.  McHale
+        3.  Parish
+
 很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：
 
-<ol>
-<li>Bird</li>
-<li>McHale</li>
-<li>Parish</li>
-</ol>
+        <ol>
+        <li>Bird</li>
+        <li>McHale</li>
+        <li>Parish</li>
+        </ol>
+
 如果你的列表标记写成：
 
-1.  Bird
-1.  McHale
-1.  Parish
+        1.  Bird
+        1.  McHale
+        1.  Parish
+
 或甚至是：
 
-3. Bird
-1. McHale
-8. Parish
+        3. Bird
+        1. McHale
+        8. Parish
+
 你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。
 
 如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。
