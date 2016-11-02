@@ -585,10 +585,11 @@ Markdown 会转成：
 
 （这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）
 
+## Markdown 免费编辑器
+
+
 ## 参考
 
-1.  [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/#list)
-2.  [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)
-
-## Markdown 免费编辑器
+*   [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/#list)
+*   [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)
 
